@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Waqt indir</title>
+<script>
+  // Afişteki QR buraya gelir: ?c=<kampanya> (ör. cami_rotterdam_mevlana).
+  // iPhone → App Store, Android → Play; diğerleri iki düğmeyi görür.
+  (function () {
+    var m = /[?&]c=([a-z0-9_-]{1,40})/i.exec(location.search);
+    var c = m ? m[1].toLowerCase() : 'genel';
+    var play = 'https://play.google.com/store/apps/details?id=com.staalstudio.waqt' +
+      '&referrer=' + encodeURIComponent('utm_source=afis&utm_medium=qr&utm_campaign=' + c);
+    var ios = 'https://apps.apple.com/app/apple-store/id6814102447?ct=' + c + '&mt=8';
+    var ua = navigator.userAgent;
+    var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/.test(ua);
+    window.__links = { play: play, ios: ios };
+    if (isIOS) location.replace(ios);
+    else if (isAndroid) location.replace(play);
+  })();
+</script>
+<style>
+  :root { --bg: #FFFFFF; --ink: #0B2B2E; --emerald: #14504A; --gold: #C9A24D; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0B2B2E; --ink: #F3EBD8; --emerald: #1C625A; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 -apple-system, system-ui, sans-serif;
+         min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+  main { padding: 24px 16px; max-width: 420px; }
+  h1 { font-family: Georgia, serif; font-size: 34px; margin: 0 0 4px; }
+  p { margin: 0 0 24px; opacity: .8; }
+  a { display: block; margin: 12px 0; padding: 14px; border-radius: 10px; background: var(--emerald);
+      color: #fff; text-decoration: none; font-weight: 600; }
+  hr { border: 0; border-top: 2px solid var(--gold); width: 64px; margin: 0 auto 20px; }
+</style>
+</head>
+<body>
+<main>
+  <hr>
+  <h1>Waqt</h1>
+  <p>Namaz vakitleri · Gebedstijden · Prayer times</p>
+  <a id="ios" href="https://apps.apple.com/app/id6814102447">App Store (iPhone)</a>
+  <a id="play" href="https://play.google.com/store/apps/details?id=com.staalstudio.waqt">Google Play (Android)</a>
+</main>
+<script>
+  if (window.__links) {
+    document.getElementById('ios').href = window.__links.ios;
+    document.getElementById('play').href = window.__links.play;
+  }
+</script>
+</body>
+</html>
