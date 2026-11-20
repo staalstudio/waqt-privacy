@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waqt — Kullanım Koşulları / Terms of Service</title>
+<style>
+  :root {
+    --night: #04231A;
+    --gold: #C9A24D;
+    --gold-soft: #E4C77C;
+    --cream: #F6EFE0;
+    --muted: #9FC4BD;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--night), #021410);
+    color: var(--cream);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header .crescent { font-size: 28px; }
+  h1 { font-size: 22px; color: var(--gold-soft); margin: 0; }
+  .updated { color: var(--muted); font-size: 13px; margin: 4px 0 24px; }
+  .langs { display: flex; gap: 8px; margin-bottom: 28px; }
+  .langs button {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-soft);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .langs button.active { background: var(--gold); color: var(--night); font-weight: 700; }
+  .intro { color: var(--muted); font-size: 14.5px; margin-bottom: 28px; }
+  section { margin-bottom: 22px; }
+  h2 { font-size: 16.5px; color: var(--gold-soft); font-weight: 700; margin: 0 0 8px; }
+  p { color: var(--muted); font-size: 14.5px; margin: 0; }
+  a { color: var(--gold-soft); }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 12.5px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="crescent">🌙</span>
+    <h1 id="pageTitle">Kullanım Koşulları</h1>
+  </header>
+
+  <div class="langs">
+    <button data-lang="tr" class="active" onclick="setLang('tr')">Türkçe</button>
+    <button data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div class="lang-block active" data-lang="tr">
+    <p class="updated">Son güncelleme: 20 Kasım 2026</p>
+    <p class="intro">Bu koşullar, Staal Studio tarafından geliştirilen Waqt uygulamasının (Android, Wear OS, iOS ve Apple Watch) kullanımı için geçerlidir. Uygulamayı indirerek ya da kullanarak bu koşulları kabul etmiş olursun.</p>
+
+    <section><h2>Uygulamanın Kullanımı</h2><p>Waqt; namaz vakitlerini, kıble yönünü, dini günleri ve ibadet araçlarını kişisel kullanımın için sunar. Uygulamayı yürürlükteki yasalara ve uygulama mağazasının kurallarına uygun şekilde kullanmayı kabul edersin. Uygulamanın kopyalanması, değiştirilerek yeniden dağıtılması veya tersine mühendislik yapılması yasaktır.</p></section>
+
+    <section><h2>Namaz Vakitlerinin Doğruluğu</h2><p>Vakitler, seçtiğin hesaplama yöntemine göre cihazında astronomik olarak hesaplanır. Resmi takvimlerle (örneğin Diyanet ya da yerel camin) aralarında birkaç dakikalık farklar olabilir. Özellikle imsak, yatsı ve yüksek enlemlerde fark büyüyebilir. Kesin vakit için yerel camine veya resmi kurumuna danışmanı öneririz. Bildirimler; cihazının pil tasarrufu, sessiz/odak modu veya izin ayarları nedeniyle gecikebilir ya da gelmeyebilir.</p></section>
+
+    <section><h2>Kıble Yönü</h2><p>Kıble yönü cihazının pusulasına dayanır. Metal eşyalar, mıknatıslar ve elektronik cihazlar pusulayı etkileyebilir; yönü kontrol etmek için kalibrasyon uyarılarını dikkate al.</p></section>
+
+    <section><h2>Dini İçerik</h2><p>Günün ayeti, günün hadisi, dualar ve özel gün bilgileri genel bilgilendirme amaçlıdır; dini bir hüküm veya fetva yerine geçmez. Ayet ve hadis metinleri, uygulamada belirtilen kaynaklardan izinle alınmıştır.</p></section>
+
+    <section><h2>Satın Almalar</h2><p>Waqt'ın temel özellikleri ücretsizdir. Premium ve arka planlar isteğe bağlı, tek seferlik satın almalardır; abonelik yoktur. Ödemeler Google Play veya App Store üzerinden yapılır ve bu mağazaların koşullarına tabidir. İade talepleri ilgili mağazanın iade politikasına göre değerlendirilir. İade edilen bir satın almanın açtığı özellikler kapanır.</p></section>
+
+    <section><h2>Fikri Mülkiyet</h2><p>Uygulamanın tasarımı, kodu, görselleri ve markası Staal Studio'ya aittir. Üçüncü taraf içerikler (yazı tipleri, ayet ve hadis metinleri gibi) kendi lisanslarına tabidir.</p></section>
+
+    <section><h2>Sorumluluğun Sınırlandırılması</h2><p>Uygulama "olduğu gibi" sunulur. Yasaların izin verdiği ölçüde Staal Studio; vakitlerdeki farklardan, gecikmiş veya gelmeyen bildirimlerden ya da uygulamanın kullanılamamasından doğan doğrudan veya dolaylı zararlardan sorumlu tutulamaz.</p></section>
+
+    <section><h2>Gizlilik</h2><p>Verilerinin nasıl kullanıldığını <a href="./">Gizlilik Politikası</a>'nda bulabilirsin. Waqt hesap istemez, konumun ve tercihlerin cihazında kalır.</p></section>
+
+    <section><h2>Değişiklikler</h2><p>Bu koşulları zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır; değişiklikten sonra uygulamayı kullanmaya devam etmen yeni koşulları kabul ettiğin anlamına gelir.</p></section>
+
+    <section><h2>İletişim</h2><p>Soru ve önerilerin için: <a href="mailto:waqt@staalstudio.com">waqt@staalstudio.com</a></p></section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="lang-block" data-lang="en">
+    <p class="updated">Last updated: 20 November 2026</p>
+    <p class="intro">These terms apply to your use of Waqt (Android, Wear OS, iOS and Apple Watch), developed by Staal Studio. By downloading or using the app, you agree to these terms.</p>
+
+    <section><h2>Using the App</h2><p>Waqt provides prayer times, the Qibla direction, Islamic dates and worship tools for your personal use. You agree to use the app in line with applicable law and the rules of the app store you downloaded it from. Copying the app, redistributing modified versions or reverse engineering it is not permitted.</p></section>
+
+    <section><h2>Accuracy of Prayer Times</h2><p>Prayer times are calculated astronomically on your device using the calculation method you choose. They may differ by a few minutes from official timetables (for example Diyanet or your local mosque), and the difference can be larger for Fajr, Isha and at high latitudes. For exact times, please check with your local mosque or official authority. Notifications may be delayed or not delivered because of your device's battery saving, silent/Focus mode or permission settings.</p></section>
+
+    <section><h2>Qibla Direction</h2><p>The Qibla direction relies on your device's compass. Metal objects, magnets and electronics can affect the compass; please follow the calibration hints.</p></section>
+
+    <section><h2>Religious Content</h2><p>The verse of the day, hadith of the day, supplications and special-day information are provided for general guidance and are not a religious ruling (fatwa). Verse and hadith texts are used with permission from the sources named in the app.</p></section>
+
+    <section><h2>Purchases</h2><p>Waqt's core features are free. Premium and backgrounds are optional one-time purchases; there are no subscriptions. Payments are handled by Google Play or the App Store and are subject to their terms. Refund requests are handled under the refund policy of the respective store. Features unlocked by a refunded purchase are turned off.</p></section>
+
+    <section><h2>Intellectual Property</h2><p>The app's design, code, graphics and brand belong to Staal Studio. Third-party content (such as fonts and verse and hadith texts) remains subject to its own licenses.</p></section>
+
+    <section><h2>Limitation of Liability</h2><p>The app is provided "as is". To the extent permitted by law, Staal Studio is not liable for any direct or indirect damages arising from differences in prayer times, delayed or missed notifications, or the app being unavailable.</p></section>
+
+    <section><h2>Privacy</h2><p>See our <a href="./">Privacy Policy</a> for how data is used. Waqt requires no account, and your location and settings stay on your device.</p></section>
+
+    <section><h2>Changes</h2><p>We may update these terms from time to time. The current version is always published on this page; continuing to use the app after a change means you accept the updated terms.</p></section>
+
+    <section><h2>Contact</h2><p>Questions or suggestions: <a href="mailto:waqt@staalstudio.com">waqt@staalstudio.com</a></p></section>
+  </div>
+
+  <footer>© 2026 Staal Studio · Waqt</footer>
+</div>
+
+<script>
+  const titles = { tr: "Kullanım Koşulları", en: "Terms of Service" };
+  function setLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    document.querySelectorAll('.langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    document.getElementById('pageTitle').textContent = titles[lang];
+    document.documentElement.lang = lang;
+  }
+  const preferred = (navigator.language || 'tr').slice(0, 2);
+  if (preferred === 'en') setLang('en');
+  else if (preferred !== 'tr') setLang('en');
+</script>
+</body>
+</html>
